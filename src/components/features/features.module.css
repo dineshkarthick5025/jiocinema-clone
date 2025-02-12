@@ -1,0 +1,12 @@
+.features{
+    width: 100%;
+    height: 500px;
+    padding: 20px 2%;
+}
+.shows{
+    width: 100%;
+    height: 400px;
+    padding: 20px 0px;
+    display: flex;
+    column-gap: 20px;
+}

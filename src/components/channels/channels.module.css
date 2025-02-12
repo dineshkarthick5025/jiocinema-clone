@@ -1,0 +1,26 @@
+.channels {
+    width: 100%;
+    background-color: #060707;
+    display: flex;
+    padding: 30px 2%;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; 
+}
+
+
+.channels:hover {
+    background-color: #101212; 
+}
+
+
+.channels > * {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.channels > *:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); 
+}

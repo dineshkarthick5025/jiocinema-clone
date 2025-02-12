@@ -1,0 +1,13 @@
+.shows{
+    width: 100%;
+    height: 400px;
+    padding: 10px 2%;
+}
+.showsparrent{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+}
+

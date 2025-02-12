@@ -1,0 +1,20 @@
+.carousel {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* 1st and 3rd images are smaller, 2nd is larger */
+    gap: 16px; /* Adjust the gap between images */
+    align-items: center; /* Center images vertically */
+    justify-content: center; /* Center images horizontally */
+}
+
+.smallImage, .largeImage {
+    width: 100%; /* Ensure the image takes up the full width of its grid cell */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.smallImage:hover, .largeImage:hover {
+    transform: scale(1.05); /* Slightly increase size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}

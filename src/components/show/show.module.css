@@ -1,0 +1,11 @@
+.show{
+    width: 16%;
+    height: 400px;
+    background-color: yellow;
+    display: flex;
+    overflow: hidden;
+}
+.show > img{
+    height: 100%;
+    width: 100%;
+}

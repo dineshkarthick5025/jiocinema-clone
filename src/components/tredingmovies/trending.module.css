@@ -1,0 +1,13 @@
+.featuredshows > img{
+    width: 100%;
+    height: 100%;
+}
+.featuredshows{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    overflow: hidden;
+}

@@ -1,0 +1,61 @@
+.tags {
+    width: 100%;
+    height: auto; 
+    min-height: 75px; 
+    background-color: #0D0E10;
+    display: flex;
+    flex-wrap: wrap; 
+    row-gap: 10px; 
+    column-gap: 10px;
+    padding: 10px 2%;
+    align-items: center;
+    justify-content: center; 
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: 999;
+}
+
+.tags p {
+    background-color: #2c2c2c;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: white;
+    padding: 7px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap; 
+}
+
+/* Hover effect */
+.tags p:hover {
+    background-color: rgb(71, 71, 71);
+    transform: scale(1.05); 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tags {
+        justify-content: flex-start; 
+        padding: 10px 5%;
+    }
+    
+    .tags p {
+        font-size: 12px; 
+        padding: 5px 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .tags {
+        justify-content: center; /* Center align tags for small screens */
+        padding: 10px;
+    }
+
+    .tags p {
+        font-size: 11px;
+        padding: 5px 12px;
+    }
+}
