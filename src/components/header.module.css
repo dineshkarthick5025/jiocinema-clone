@@ -6,10 +6,10 @@
     justify-content: space-between;
     padding: 0px 2%;
     border-bottom: 1px solid #2c2c2c;
-    position: fixed; /* Fixes header at the top */
+    position: fixed; 
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensures it stays above other elements */
+    z-index: 1000;
 }
 
 .navigation{
