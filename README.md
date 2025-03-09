@@ -1,3 +1,4 @@
-#JioCinema Clone (Frontend)
+# JioCinema Clone (Frontend)
+# explore now:[]
 
 
