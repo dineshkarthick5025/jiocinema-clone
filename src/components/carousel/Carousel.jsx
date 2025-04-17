@@ -1,5 +1,4 @@
-import styles from './Carousel.module.css';
-
+import styles from './carousel.module.css';
 const Carousel = () => {
   return (
     <div className={styles.carousel}>
