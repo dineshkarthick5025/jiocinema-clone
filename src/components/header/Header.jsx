@@ -1,9 +1,9 @@
 import styles from './header.module.css';
-import jclogo from '../../src/assets/jc_logo_v2.svg';
-import crown from '../../src/assets/crown.svg';
-import searchicon from '../../src/assets/ic_search.svg';
-import voicesearchIcon from '../../src/assets/voice-search.svg';
-import jioicon from '../../src/assets/jio-logo.png';
+import jclogo from '../../assets/jc_logo_v2.svg';
+import crown from '../../assets/crown.svg';
+import searchicon from '../../assets/ic_search.svg';
+import voicesearchIcon from '../../assets/voice-search.svg';
+import jioicon from '../../assets/jio-logo.png';
 const Header = () => {
     let navlinks=["Home","Sports","Movies","Tv shows","More"];
     return (
