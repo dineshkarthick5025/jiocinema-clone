@@ -1,20 +1,55 @@
 .carousel {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr; /* 1st and 3rd images are smaller, 2nd is larger */
-    gap: 16px; /* Adjust the gap between images */
-    align-items: center; /* Center images vertically */
-    justify-content: center; /* Center images horizontally */
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+    margin-top: 80px;
 }
 
 .smallImage, .largeImage {
-    width: 100%; /* Ensure the image takes up the full width of its grid cell */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect */
+.largeImage {
+    max-height: 600px;
+}
+
 .smallImage:hover, .largeImage:hover {
-    transform: scale(1.05); /* Slightly increase size */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 70px;
+        padding: 0 3%;
+    }
+
+    .smallImage {
+        display: none;
+    }
+
+    .largeImage {
+        aspect-ratio: 16/9;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        padding: 0 4%;
+        margin-top: 60px;
+    }
+
+    .largeImage {
+        max-height: 300px;
+    }
 }

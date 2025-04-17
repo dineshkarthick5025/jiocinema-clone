@@ -1,13 +1,37 @@
-.featuredshows > img{
+.featuredshows {
+    width: 100%;
+    aspect-ratio: 2/3;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    transition: transform 0.3s ease;
+}
+
+.featuredshows > img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
 }
-.featuredshows{
-    width: 30%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: green;
-    overflow: hidden;
+
+.featuredshows:hover {
+    transform: scale(1.02);
+}
+
+.featuredshows:hover > img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .featuredshows {
+        aspect-ratio: 3/4;
+    }
+}
+
+@media (max-width: 480px) {
+    .featuredshows {
+        aspect-ratio: 1/1.5;
+    }
 }

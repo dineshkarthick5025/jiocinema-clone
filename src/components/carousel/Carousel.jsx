@@ -12,6 +12,7 @@ const Carousel = () => {
         src="https://i.ytimg.com/vi/7KEyG7svobI/maxresdefault_live.jpg"
         alt="Live Image"
         className={styles.largeImage}
+        loading="lazy"
       />
       <img
         src="https://images.justwatch.com/poster/319251402/s718/season-1.jpg"

@@ -1,25 +1,37 @@
 .featuredshows {
-    width: 30%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: green;
+    width: 100%;
+    aspect-ratio: 16/9;
+    position: relative;
     overflow: hidden;
-    transition: background-color 0.3s ease; /* Smooth background transition */
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    transition: transform 0.3s ease;
 }
 
 .featuredshows > img {
     width: 100%;
     height: 100%;
-    transition: transform 0.3s ease; /* Smooth scaling effect */
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
 }
 
-/* Hover effect */
 .featuredshows:hover {
-    background-color: darkgreen; /* Change background color on hover */
+    transform: scale(1.02);
 }
 
 .featuredshows:hover > img {
-    transform: scale(1.1); /* Slightly enlarge image */
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .featuredshows {
+        aspect-ratio: 3/2;
+    }
+}
+
+@media (max-width: 480px) {
+    .featuredshows {
+        aspect-ratio: 4/3;
+    }
 }

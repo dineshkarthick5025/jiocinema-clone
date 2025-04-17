@@ -1,11 +1,31 @@
-.show{
-    width: 16%;
-    height: 400px;
-    background-color: yellow;
-    display: flex;
-    overflow: hidden;
-}
-.show > img{
-    height: 100%;
+.show {
     width: 100%;
+    aspect-ratio: 2/3; /* Maintains image proportion */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.show > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.show:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .show {
+        aspect-ratio: 3/4;
+    }
+}
+
+@media (max-width: 480px) {
+    .show {
+        aspect-ratio: 1/1.5;
+    }
 }
